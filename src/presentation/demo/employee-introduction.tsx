@@ -1,0 +1,6 @@
+import { EmployeeAvatar } from "./employee-avatar";
+import { DemoIcon } from "./demo-icon";
+
+export function EmployeeIntroduction({ onStart }: { onStart: () => void }) {
+  return <section className="mx-auto flex min-h-[calc(100vh-73px)] max-w-3xl flex-col items-center justify-center px-5 py-16 text-center sm:px-8"><div className="animate-enter"><EmployeeAvatar /><p className="mt-8 text-xs font-bold uppercase tracking-[0.18em] text-[#63764d]">Meet your AI Employee</p><h1 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.065em] text-[#171a18] sm:text-6xl">AI Sales Employee</h1><p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-7 text-[#656a65] sm:text-lg">Your intelligent sales employee that qualifies leads, answers questions, books appointments and follows up automatically.</p><button type="button" onClick={onStart} className="mt-9 inline-flex items-center gap-2 rounded-full bg-[#171a18] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(23,26,24,0.16)] transition-all hover:-translate-y-0.5 hover:bg-[#323833] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#171a18]">Start Conversation <DemoIcon name="send" className="size-4" /></button><p className="mt-5 text-xs text-[#858984]">A guided real-estate sales demonstration</p></div></section>;
+}
