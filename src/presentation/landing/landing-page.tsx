@@ -289,8 +289,13 @@ export function LandingPage() {
               <a href="mailto:avigailaniekan@gmail.com" className="inline-flex items-center gap-1.5 transition-colors hover:text-[#d4f66b]">
                 ✉ avigailaniekan@gmail.com
               </a>
-              <a href="tel:+2348143043419" className="inline-flex items-center gap-1.5 transition-colors hover:text-[#d4f66b]">
-                📞 +234 814 304 3419
+              <a
+                href="https://api.whatsapp.com/send?phone=2348143043419&text=Hi%20MercyAI%20Team%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20Sales%20Employee."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 transition-colors hover:text-[#d4f66b]"
+              >
+                💬 Chat on WhatsApp
               </a>
             </div>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -324,7 +329,14 @@ export function LandingPage() {
             <div className="mt-3 flex flex-wrap gap-4 text-xs text-[#6a6f69]">
               <a href="mailto:avigailaniekan@gmail.com" className="hover:text-[#161817]">avigailaniekan@gmail.com</a>
               <span>•</span>
-              <a href="tel:+2348143043419" className="hover:text-[#161817]">+234 814 304 3419</a>
+              <a
+                href="https://api.whatsapp.com/send?phone=2348143043419&text=Hi%20MercyAI%20Team%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20Sales%20Employee."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#161817]"
+              >
+                WhatsApp Us
+              </a>
             </div>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-[#565b56]">
