@@ -285,9 +285,17 @@ export function LandingPage() {
             <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-7 text-white/70 sm:text-lg">
               Book a 15-minute executive demo to see how an AI Sales Employee doubles viewing conversion rates for your team.
             </p>
-            <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-white/80">
+              <a href="mailto:avigailaniekan@gmail.com" className="inline-flex items-center gap-1.5 transition-colors hover:text-[#d4f66b]">
+                ✉ avigailaniekan@gmail.com
+              </a>
+              <a href="tel:+2348143043419" className="inline-flex items-center gap-1.5 transition-colors hover:text-[#d4f66b]">
+                📞 +234 814 304 3419
+              </a>
+            </div>
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <a
-                href="mailto:sales@mercyai.com?subject=Real%20Estate%20AI%20Demo%20Booking"
+                href="mailto:avigailaniekan@gmail.com?subject=Real%20Estate%20AI%20Demo%20Booking"
                 className="rounded-full bg-[#d4f66b] px-8 py-4 text-sm font-extrabold uppercase tracking-wider text-[#1e2915] transition-transform hover:-translate-y-0.5 hover:bg-[#c6ea59]"
               >
                 Book Real Estate Sales Demo →
@@ -313,6 +321,11 @@ export function LandingPage() {
             <p className="mt-3 max-w-sm text-sm leading-6 text-[#6a6f69]">
               Automated AI Sales Employees for ambitious real estate organizations.
             </p>
+            <div className="mt-3 flex flex-wrap gap-4 text-xs text-[#6a6f69]">
+              <a href="mailto:avigailaniekan@gmail.com" className="hover:text-[#161817]">avigailaniekan@gmail.com</a>
+              <span>•</span>
+              <a href="tel:+2348143043419" className="hover:text-[#161817]">+234 814 304 3419</a>
+            </div>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-[#565b56]">
             <a href="#designed-for" className="hover:text-black">Designed For</a>
