@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "npx tsx --test tests/unit/conversation-engine.test.ts"
   },
   "dependencies": {
     "next": "16.3.0",

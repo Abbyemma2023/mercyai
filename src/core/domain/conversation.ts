@@ -24,9 +24,38 @@ export type QualificationKey =
   | "budget"
   | "propertyType"
   | "location"
+  | "bedrooms"
   | "timeline"
   | "financing"
   | "appointment";
+
+export type BuyerIntent = "end-user" | "investor" | "browsing" | "undecided";
+
+export type BuyerMotivation =
+  | "family_home"
+  | "rental_yield"
+  | "capital_growth"
+  | "relocation"
+  | "upgrade"
+  | "browsing";
+
+export type BuyerReadiness =
+  | "browsing"
+  | "exploring"
+  | "interested"
+  | "serious"
+  | "high_intent"
+  | "ready_for_inspection";
+
+export type PriorityHandled =
+  | "question"
+  | "correction"
+  | "buying_signal"
+  | "objection"
+  | "intent_shift"
+  | "family_decision"
+  | "full_brief"
+  | "discovery";
 
 export interface ConversationMessage {
   id: string;
@@ -44,11 +73,18 @@ export interface QualificationState {
   timeline?: string;
   financing?: string;
   appointment: boolean;
+  buyerIntent?: BuyerIntent;
+  buyerMotivation?: BuyerMotivation;
+  buyerReadiness?: BuyerReadiness;
+  lastObjectionAnswered?: string;
+  pendingQuestionDiscarded?: boolean;
 }
 
 export interface ConversationState {
   stage: ConversationStage;
   qualification: QualificationState;
+  lastExtractedKeys?: QualificationKey[];
+  priorityHandled?: PriorityHandled;
 }
 
 export interface ConversationTurn {
